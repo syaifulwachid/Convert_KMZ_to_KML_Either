@@ -1,12 +1,3 @@
-# Convert_KMZ_to_KML_Either
-This Python script provides a graphical user interface (GUI) using `tkinter` to convert between KMZ and KML files. Here’s a summary of what each function does:
-
-1. **`convert_kmz_to_kml(kmz_file_path)`**: Converts a KMZ file to a KML file.
-2. **`convert_kml_to_kmz(kml_file_path)`**: Converts a KML file to a KMZ file.
-3. **`open_file_dialog()`**: Opens a file dialog to select a KML or KMZ file and converts it based on its extension.
-
-To run the script, simply execute it, and a file dialog will appear to guide you through the process. Here's the full code for reference:
-
 ```python
 import zipfile
 import os
@@ -75,15 +66,3 @@ def open_file_dialog():
 if __name__ == "__main__":
     open_file_dialog()
 ```
-
-### How to Use
-1. **Run the script**: Execute the script using a Python interpreter.
-2. **File Selection**: A file dialog will appear prompting you to select a KML or KMZ file.
-3. **Conversion**: Based on the file type selected, the script will automatically convert KMZ to KML or KML to KMZ and save the new file in the same location as the original.
-4. **Messages**: Informational message boxes will guide you through the process and inform you about the success or failure of the conversion.
-
-### Dependencies
-- Python 3
-- `tkinter` (usually included with Python installations)
-- `zipfile` (part of the Python standard library)
-- `os` (part of the Python standard library)
